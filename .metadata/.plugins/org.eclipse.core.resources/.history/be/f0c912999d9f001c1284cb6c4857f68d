@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>¡Bienvenido!</title>
+</head>
+<body>
+	<h1 style="color: blue"> Bienvenidos a nuestra página web</h1>
+	<a href="otrorecurso.html">Enlace a otro recurso</a>
+</body>
+</html>

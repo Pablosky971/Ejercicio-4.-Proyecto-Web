@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Presentación</title>
+<link rel="stylesheet" href="css/index.css"
+</head>
+<body>
+	<header>
+		<h1 class="titulo"> ¡Bienvenidos a mi primer proyecto web! </h1>
+		<h3 class="subtitulo"> Espero que le guste como lo he confeccionado.</h3>
+		
+	</header>
+	
+	<main>
+	
+	<nav>
+		<h3> Aquí podrá encontrar los enlaces que le conducirán directamente hacia anteriores trabajos que he realizado con HTML y CSS</h3>
+	</nav>
+	</main>
+
+</body>
+</html>
