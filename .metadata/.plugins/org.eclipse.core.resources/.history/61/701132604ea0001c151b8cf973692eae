@@ -1,0 +1,12 @@
+package modelo.entidad;
+
+public class Persona {
+	
+	private String nombre
+	public Persona() {
+		super();
+	}
+
+	
+	
+}

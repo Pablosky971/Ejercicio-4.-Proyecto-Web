@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+
+	<h1>¡Bienvenido a nuestra página!</h1>
+	
+	<h3>Puede introducir sus credenciales para acceder aquí</h3>
+
+</body>
+</html>

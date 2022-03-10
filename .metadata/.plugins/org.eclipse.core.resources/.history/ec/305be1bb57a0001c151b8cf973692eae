@@ -1,0 +1,21 @@
+package modelo.entidad;
+
+public class Persona {
+	
+	private String nombre;
+	private String apellido;
+	private i
+	
+	
+	public Persona() {
+		super();
+	}
+
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+}

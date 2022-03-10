@@ -1,0 +1,80 @@
+package servlets;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import modelo.entidad.Persona;
+
+/**
+ * Servlet implementation class PrimerServlet.
+ */
+// Un servlet es capaz de procesar peticiones HTTP.
+//Las anotaciones en Java proporcionan funcionalidad.
+// ¿Qué hace exactamente la anotación @WebServlet?
+	// 1. Da de alta un objeto (y solo uno) de la clase PrimerServlet (Patrón Singleton: objeto único).
+	// 2. Mapear dicho objeto creado a la dirección /PrimerServlet.
+
+
+	
+// Método dinámico: solo existe si existe el objeto.
+// Método estático: existe aun no existiendo el objeto.
+
+// El ciclo de vida del Servlet es hasta que se pierda la referencia. Lo mantiene referenciado TomCat, que ha creado una referencia y el objeto PrimerServlet para mantenerlo
+// con vida. Este concepto se denomina "inversión de control", este concepto dice que el programador no se encarga de mantener el ciclo de vida del objeto, sino otra entidad,
+// que nuestro caso es Tomcat. Tomcat crea un objeto de este tipo y lo mantiene en memoria durante toda la ejecución del programa.
+
+@WebServlet("/PrimerServlet") // Recurso al que está asociado este servlet. Es la manera de mapearlo.
+public class PrimerServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	
+   
+   // HTTP
+	// GET /PrimerServlet http 1.1
+	
+	// Los servlets tendrán dos objetos asociados: la request y la response. Serán creados e inyectados para poder trabajar con las peticones y las respuestas, abstrayéndome de este tipo de código. 
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// Si la petición es GET.
+		response.getWriter().append("Hola PrimerServlet DoGet").append(request.getContextPath());
+		
+		
+		// ¿Cuál es el ciclo de vida de un objeto de Java?
+				// El ciclo de vida de un objeto en Java.
+//					1. Nace con el new();
+//					2. Muere cuando se quede desreferenciado.
+				// Para eliminar un objeto: p=null. De está forma, el objeto p quedará desreferenciado.
+				// El Garbage collector es un programa que pasa cada cierto tiempo y elimina objetos desreferenciados.
+				
+				// ¿Cuál es el ciclo de vida de una referencia en Java?
+				// Respuesta: desde que declaras la referencia, hasta donde acaba el bloque donde se declaró.
+				
+				// Un bloque en Java es un grupo de sentencias. Para crearlo se alamacena entre {}.
+		
+		Persona p1=null;
+		{ // Bloque
+		Persona p = new Persona(); // Crear objeto persona. Se accede a los objetos mediante su referencia.
+		p.setNombre("Tony Stark");
+		p.getNombre();
+		
+		
+		} // Aquí morirá la referencia, y por lo tanto el objeto quedará desreferenciado y morirá en un futuro cuando se pase el Garbage Collector
+		
+		Persona p = new Persona(); // Está vacio. Es un objeto distinto al anterior contenido en el bloque anteriormente definido.
+	}
+
+	
+
+	   // HTTP
+		// POST /PrimerServlet http 1.1
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// Si la petición es POST.
+		response.getWriter().append("Hola PrimerServlet DoPost").append(request.getContextPath());
+	}
+
+}

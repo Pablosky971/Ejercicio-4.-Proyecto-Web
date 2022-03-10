@@ -1,0 +1,9 @@
+package modelo.entidad;
+
+public class Persona {
+	
+	public Persona() {
+		
+	}
+
+}

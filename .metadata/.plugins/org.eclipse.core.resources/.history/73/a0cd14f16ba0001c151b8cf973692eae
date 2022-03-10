@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+
+	<h1>¡Bienvenido a nuestra página!</h1>
+	
+	<h3>Puede introducir sus credenciales para acceder aquí</h3>
+	<main>
+    <form action="formulario_exito.html" method="get">
+        
+        <fieldset><legend>Datos</legend>
+            
+            <label for="nombre">Nombre: </label>
+            
+            <input id="nombre" type="text" name="nombre" placeholder="Luna Lovegood" required autofocus/>
+            <br />
+            <br />
+            <label for="edad">Edad: </label>
+            <input id="edad" type="number" name="edad" min="12" max="100" step="1" requiered/>
+            <br/>
+            <br />
+            <label for="fecha_nacimiento" >Fecha de nacimiento: </label>
+            <br/>
+             <br/>
+            <input type="date" name="fecha_nacimiento" required>
+            
+            <br/>
+            <input id="idMago" type="hidden" name="idMago" value="792"/>
+            <br/>
+            
+            <label for="sexo">Sexo: </label>
+            <br />	
+            <input type="radio" name="sexo" value="Masculino" checked />Masculino<br />	
+            <input type="radio" name="sexo" value="Femenino" />Femenino<br />	
+            <input type="radio" name="sexo" value="Otro" />Otro<br />	
+          
+            <label for="contacto1">Dirección de su lechuza: </label>
+            <input type="email" name="contacto1" required/>
+            <br/>
+             <br/>
+       
+            <label for="condicion">Condición: </label>
+            <br />	
+            <input type="radio" name="condicion" value="SL" checked />Sangre limpia<br />	
+            <input type="radio" name="condicion" value="HM" />Hijo de muggles<br />	
+            <input type="radio" name="condicion" value="SQ" />Squib<br />	
+            <input type="radio" name="condicion" value="F" />Fantasma<br />	
+            <input type="radio" name="condicion" value="E" />Elfo<br />	
+
+            
+            <br/>
+            <label for="personalidad">Atributos personalidad: </label>
+            <br />	
+            <input type="checkbox" name="personalidad" value="Honorable" />Honorable<br />	
+            <input type="checkbox" name="personalidad" value="Terco" />Terco<br />	
+            <input type="checkbox" name="personalidad" value="Inteligente" />Inteligente<br />	
+            <input type="checkbox" name="personalidad" value="Pérfido" />Pérfido<br />
+            <input type="checkbox" name="personalidad" value="Cariñoso" />Cariñoso<br />	
+            <input type="checkbox" name="personalidad" value="Trabajador" />Trabajador<br />	
+            <input type="checkbox" name="personalidad" value="Estudioso" />Estudioso<br />	
+            <input type="checkbox" name="personalidad" value="Coqueto" />Coqueto<br />
+            <input type="checkbox" name="personalidad" value="Acarajotao" />Acarajotao<br />	
+            <input type="checkbox" name="personalidad" value="Divertido" />Divertido<br />	
+            <input type="checkbox" name="personalidad" value="Aburrido" />Aburrido<br />	
+            <input type="checkbox" name="personalidad" value="Creativo" />Creativo<br />
+            <input type="checkbox" name="personalidad" value=">Afable" />Afable<br />
+            <input type="checkbox" name="personalidad" value="Paciente" />Paciente<br />	
+            <input type="checkbox" name="personalidad" value="Valiente" />Valiente<br />	
+            <input type="checkbox" name="personalidad" value="Cobarde" />Cobarde<br />	
+            <input type="checkbox" name="personalidad" value="Razonable" />Razonable<br />	
+            <br/>
+        
+            <label for="casa_padre">¿A qué casa perteneció su padre? </label>
+            <select name="casa_padre">
+                <option value="Griffinfor" selected>Griffinfor</option>
+                <option value="Slytherin">Slytherin</option>
+                <option value="Ravenclaw">Ravenclaw</option>
+                <option value="Hufflepuff">Hufflepuff</option>
+                <option value="Ninguna">Ninguna (es muggle o squib)</option>
+            </select>
+            <br />
+
+            <label for="casa_madre">¿A qué casa perteneció su madre? </label>
+            <select name="casa_madre">
+                <option value="Griffinfor">Griffinfor</option>
+                <option value="Slytherin">Slytherin</option>
+                <option value="Ravenclaw" selected>Ravenclaw</option>
+                <option value="Hufflepuff">Hufflepuff</option>
+                <option value="Ninguna">Ninguna (es muggle o squib)</option>
+            </select>
+            <br />
+           
+            <br/>
+            <label for="preferencias">Aquí puede indicarnos sus preferencias personales: </label>
+            <br />	
+            
+            <textarea style="resize: none;" rows="10" cols="100" name="preferencias"></textarea>
+             
+            <br/>
+            <br/>
+            <label for="terminos">Acepta que sus datos serán usados para su posible acceso a Hogwarts, y que no podrá cambiar la decisión inequívoca del glorioso Sombrero seleccionador </label>
+            <br/>	
+            Acepto <input type="checkbox" name="terminos" value="Si" required/>
+            <br/>	
+            
+            <br/>	
+            <input class="submit" type="submit" value="Enviar al Sombrero seleccionador" />
+            
+            <input class="reset" type="reset" value="Reiniciar formulario de acceso" />
+        </fieldset>
+    </form>
+</main>
+
+</body>
+</html>

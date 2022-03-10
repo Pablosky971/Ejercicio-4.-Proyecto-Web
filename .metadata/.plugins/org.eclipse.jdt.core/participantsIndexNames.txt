@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\pablo.calle\Desktop\Curso de formación\WsJavaBabel\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1611260153.index
+\01_Web\src\main\java
+C:\Users\pablo.calle\Desktop\Curso de formación\WsJavaBabel\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1938797307.index
+\Ejercicio5Servlet\src\main\java

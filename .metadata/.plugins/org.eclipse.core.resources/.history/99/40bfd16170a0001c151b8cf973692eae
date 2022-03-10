@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Error</title>
+</head>
+<body>
+	<h1> Los credenciales introducidos no coinciden con los de ningún usuario registrado previamente.</h1>
+	<button></button>
+</body>
+</html>
