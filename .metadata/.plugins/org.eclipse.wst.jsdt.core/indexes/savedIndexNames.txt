@@ -1,5 +1,13 @@
 INDEX VERSION 1.4+C:\Users\pablo.calle\Desktop\Curso de formación\WsJavaBabel\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 3572677925.index
+<<<<<<< HEAD
 2693362289.index
 4228322651.index
 1938797307.index
+=======
+2170707897.index
+1938797307.index
+4228322651.index
+1611260153.index
+2693362289.index
+>>>>>>> ejercicio5
