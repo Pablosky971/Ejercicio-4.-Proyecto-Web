@@ -1,0 +1,44 @@
+body {
+    background-color: aliceblue;
+}
+header {
+
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+legend {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input:focus {
+    box-shadow: 15px 15px 10px #a9caf5;
+}
+
+
+input.submit {
+    border-radius: 10px;
+    background-color: yellow;
+
+
+}
+
+input.reset {
+    border-radius: 10px;
+    background-color: fuchsia;
+      
+}
+
+
+
+

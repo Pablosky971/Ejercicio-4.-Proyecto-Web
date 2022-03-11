@@ -1,0 +1,46 @@
+body{
+    background-color: chocolate;
+}
+img.libromestizo{
+    position:absolute;
+    top: 150px;
+    left: 650px;
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+}
+
+span.amortentia {
+    color: deeppink;
+
+}
+
+span.multijugos {
+    color: blueviolet;
+    
+}
+
+span.felix {
+    color: khaki
+}
+
+span.huesos {
+    color: lightblue;
+    
+}
+
+ol {
+    position:absolute;
+    background-color: beige;
+    width: 100%;
+    left: 0%;
+}
+
+ul {
+    list-style-type:disc;
+    background-color: blanchedalmond;
+    width: 30%;
+  
+    
+    
+}
