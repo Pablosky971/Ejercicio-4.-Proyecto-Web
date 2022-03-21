@@ -1,6 +1,8 @@
 package servlets;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,9 +22,9 @@ public class Login extends HttpServlet {
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		List<Usuario> usuarios = new ArrayList<Usuario>();
 		String nombre = request.getParameter("nombre");
 		String password = request.getParameter("password");
-		
 		Usuario u = new Usuario();
 		u.setNombre(nombre);
 		u.setPassword(password);
@@ -42,11 +44,18 @@ public class Login extends HttpServlet {
 		u3.setNombre("FdePablo");
 		u3.setPassword("elmejorProfe");
 		
+		usuarios.add(u1);
+		usuarios.add(u2);
+		usuarios.add(u3);
+		
 		// Verificamos si los credenciales coinciden.
 		
-		if((u1.getNombre().equals(u.getNombre()) && u1.getPassword().equals(u.getPassword()))
-				|| (u2.getNombre().equals(u.getNombre()) && u2.getPassword().equals(u.getPassword())) ||
-				(u3.getNombre().equals(u.getNombre()) && u3.getPassword().equals(u.getPassword()))) {
+		int i = 0;
+		for(i=0;i<usuarios.size();i++) {
+			
+	
+		
+		if(usuarios.get(i).getNombre().equals(nombre) && usuarios.get(i).getPassword().equals(password)) {
 			
 			request.getSession().setAttribute("nombre", nombre);
 			RequestDispatcher rd = request.getRequestDispatcher("exito.jsp");
@@ -55,6 +64,8 @@ public class Login extends HttpServlet {
 		} else {
 			RequestDispatcher rd = request.getRequestDispatcher("error.html");
 			rd.forward(request, response);
+		}
+		
 		}
 		
 	}
